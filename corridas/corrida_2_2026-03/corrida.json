@@ -1,0 +1,93 @@
+{
+  "corrida": 2,
+  "mes_objetivo": "2026-03",
+  "fecha": "2026-09-04T00:56:00.608Z",
+  "modelo": "claude-sonnet-4-6",
+  "duracion_ms": 32856,
+  "reproducibilidad": {
+    "system_prompt": "../../prompts/system_prompt.md",
+    "user_prompt_template": "../../prompts/user_prompt.md",
+    "datos_de_entrada_de_la_herramienta": "../../herramienta/salidas/metricas_2026-03.json — generado con: python3 agregar_metricas_canal.py --mes 2026-03 --min-facturacion 500000",
+    "nota_confidencialidad": "Los nombres de canal fueron anonimizados (Canal-XXX) y los montos monetarios escalados por un factor aleatorio por canal, consistente entre meses. Ver DECISIONES.md, iteración 7."
+  },
+  "usage": {
+    "input_tokens": 10283,
+    "output_tokens": 1888,
+    "service_tier": "standard"
+  },
+  "salida_parseada": {
+    "periodo_analizado": "2026-03",
+    "resumen_ejecutivo": "El mes cierra con facturación neta de ARS 861,6M distribuida en 22 canales activos, fuertemente concentrada en Canal-001 (44,1% del total) con un ratio NC/FC elevado de 0,26 que merece revisión. Seis canales registran facturación neta negativa —todos por acuerdo comercial o rechazo puntual, sin facturas emisoras en el mes— lo que señala liquidaciones de períodos anteriores sin actividad nueva. La cartera presenta alta volatilidad histórica en los canales principales, lo que limita la confianza de cualquier proyección.",
+    "canales_prioritarios": [
+      {
+        "canal": "Canal-001",
+        "categoria": "riesgo",
+        "metrica_clave": "ratio_nc_fc = 0.2635; 52 NCs administrativas sobre 117 totales",
+        "evidencia": "Con 117 NCs sobre 444 FCs, el motivo administrativo (52 casos) es el dominante, seguido de rechazo cliente (37). Un ratio de 0,26 es el más alto entre todos los canales con volumen relevante y afecta al canal que concentra el 44% de la facturación total del mes.",
+        "confianza": "alta",
+        "requiere_revision_humana": true
+      },
+      {
+        "canal": "Canal-002",
+        "categoria": "riesgo",
+        "metrica_clave": "facturacion_neta_ars = -10.517.767; ratio_nc_fc = null (0 FCs en el mes)",
+        "evidencia": "4 NCs por acuerdo comercial sin ninguna factura emitida en marzo, canal que históricamente movió hasta ARS 397M en noviembre 2025. La desaparición de actividad emisora combinada con ajustes por acuerdo requiere verificación del estado de la relación comercial.",
+        "confianza": "alta",
+        "requiere_revision_humana": true
+      },
+      {
+        "canal": "Canal-056",
+        "categoria": "riesgo",
+        "metrica_clave": "ratio_nc_fc = 0.50; 2 NCs sobre 4 FCs, ambas por devolución logística",
+        "evidencia": "El ratio más alto del mes entre canales con al menos una FC. Aunque el volumen absoluto es bajo (ARS 1,97M), la tasa de devolución logística del 50% sobre FCs y la ausencia de historia previa impiden evaluar si es estructural o puntual.",
+        "confianza": "baja",
+        "requiere_revision_humana": true
+      },
+      {
+        "canal": "Canal-006",
+        "categoria": "oportunidad",
+        "metrica_clave": "largo_20_mas = 89,4% del mix de cuotas; share = 26,8%",
+        "evidencia": "Es el único canal con concentración casi total en cuotas largas (≥20 cuotas), lo que sugiere un perfil financiero diferenciado. Con ratio NC/FC de 0,013 —el más bajo del portfolio con volumen significativo— la calidad operativa es alta y el canal puede ser candidato a análisis de expansión de productos.",
+        "confianza": "alta",
+        "requiere_revision_humana": false
+      },
+      {
+        "canal": "Canal-005",
+        "categoria": "riesgo",
+        "metrica_clave": "facturacion_neta_ars = -2.287.354; ratio_nc_fc = null (0 FCs en el mes)",
+        "evidencia": "Canal que en septiembre 2025 facturó ARS 2.667M y hoy solo registra una NC por acuerdo comercial, con tendencia decreciente sostenida desde esa fecha incluyendo un mes negativo en enero 2026. La caída estructural desde niveles máximos amerita revisión del estado contractual.",
+        "confianza": "media",
+        "requiere_revision_humana": true
+      }
+    ],
+    "forecast_canal": [
+      {
+        "canal": "Canal-001",
+        "proyeccion_proximo_mes_ars": 1106997240.43,
+        "metodo": "promedio simple de los últimos 3 meses de historia_6m_previa (2025-12, 2026-01, 2026-02)",
+        "confianza": "baja"
+      },
+      {
+        "canal": "Canal-006",
+        "proyeccion_proximo_mes_ars": 99109341.03,
+        "metodo": "promedio simple de los últimos 3 meses de historia_6m_previa (2025-12, 2026-01, 2026-02)",
+        "confianza": "baja"
+      },
+      {
+        "canal": "Canal-014",
+        "proyeccion_proximo_mes_ars": 115760619.47,
+        "metodo": "promedio simple de los últimos 3 meses de historia_6m_previa (2025-12, 2026-01, 2026-02)",
+        "confianza": "baja"
+      }
+    ],
+    "datos_insuficientes": [
+      "Canal-004: mix_cuotas_pct 100% sin_dato; historia_6m_previa solo 3 meses disponibles (2025-10 a 2025-12), sin datos 2026",
+      "Canal-048: historia_6m_previa incluye un mes con facturación neta negativa, posiblemente una reversión; mix_cuotas_pct 100% sin_dato",
+      "Canal-053, Canal-055, Canal-056: historia_6m_previa vacía — forecast no calculable",
+      "Canal-054: historia_6m_previa con meses discontinuos, sin datos consecutivos; mix_cuotas_pct 100% sin_dato",
+      "Canal-057, Canal-058, Canal-059, Canal-005, Canal-002: ratio_nc_fc nulo por ausencia de FCs en el mes",
+      "Canal-034: mix_cuotas_pct 100% sin_dato en todos los documentos del mes",
+      "Canal-045: historia_6m_previa con un único dato disponible — forecast no representativo"
+    ]
+  }
+}
