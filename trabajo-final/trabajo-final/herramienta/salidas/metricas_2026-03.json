@@ -1,0 +1,698 @@
+{
+  "mes_objetivo": "2026-03",
+  "facturacion_neta_total_ars": 861637954.53,
+  "cantidad_canales_activos": 22,
+  "canales": [
+    {
+      "canal": "Canal-001",
+      "facturacion_neta_ars": 379932715.52,
+      "share_pct_del_mes": 44.09,
+      "cantidad_documentos": 561,
+      "cantidad_fc": 444,
+      "cantidad_nc": 117,
+      "ratio_nc_fc": 0.2635,
+      "motivos_nc": {
+        "devolucion_comercial": 24,
+        "rechazo_cliente": 37,
+        "devolucion_logistica": 4,
+        "administrativa": 52
+      },
+      "mix_cuotas_pct": {
+        "medio_10_18": 38.1,
+        "corto_1_9": 59.2,
+        "sin_dato": 2.7
+      },
+      "historia_6m_previa": [
+        {
+          "mes": "2025-09",
+          "facturacion_neta_ars": 151422284.1
+        },
+        {
+          "mes": "2025-10",
+          "facturacion_neta_ars": 169274324.97
+        },
+        {
+          "mes": "2025-11",
+          "facturacion_neta_ars": 1579858605.37
+        },
+        {
+          "mes": "2025-12",
+          "facturacion_neta_ars": 919777751.42
+        },
+        {
+          "mes": "2026-01",
+          "facturacion_neta_ars": 1521271801.7
+        },
+        {
+          "mes": "2026-02",
+          "facturacion_neta_ars": 879944168.07
+        }
+      ]
+    },
+    {
+      "canal": "Canal-006",
+      "facturacion_neta_ars": 230905803.2,
+      "share_pct_del_mes": 26.8,
+      "cantidad_documentos": 160,
+      "cantidad_fc": 158,
+      "cantidad_nc": 2,
+      "ratio_nc_fc": 0.0127,
+      "motivos_nc": {
+        "rechazo_cliente": 1,
+        "devolucion_comercial": 1
+      },
+      "mix_cuotas_pct": {
+        "medio_10_18": 9.3,
+        "largo_20_mas": 89.4,
+        "corto_1_9": 0.6,
+        "sin_dato": 0.6
+      },
+      "historia_6m_previa": [
+        {
+          "mes": "2025-09",
+          "facturacion_neta_ars": 52740956.74
+        },
+        {
+          "mes": "2025-10",
+          "facturacion_neta_ars": 24468952.08
+        },
+        {
+          "mes": "2025-11",
+          "facturacion_neta_ars": 281466123.72
+        },
+        {
+          "mes": "2025-12",
+          "facturacion_neta_ars": 143277514.34
+        },
+        {
+          "mes": "2026-01",
+          "facturacion_neta_ars": 49871670.76
+        },
+        {
+          "mes": "2026-02",
+          "facturacion_neta_ars": 104178838.01
+        }
+      ]
+    },
+    {
+      "canal": "Canal-014",
+      "facturacion_neta_ars": 93287744.97,
+      "share_pct_del_mes": 10.83,
+      "cantidad_documentos": 38,
+      "cantidad_fc": 36,
+      "cantidad_nc": 2,
+      "ratio_nc_fc": 0.0556,
+      "motivos_nc": {
+        "rechazo_cliente": 1,
+        "devolucion_comercial": 1
+      },
+      "mix_cuotas_pct": {
+        "medio_10_18": 38.2,
+        "corto_1_9": 61.8
+      },
+      "historia_6m_previa": [
+        {
+          "mes": "2025-09",
+          "facturacion_neta_ars": 16487263.72
+        },
+        {
+          "mes": "2025-10",
+          "facturacion_neta_ars": 12332784.86
+        },
+        {
+          "mes": "2025-11",
+          "facturacion_neta_ars": 256992475.67
+        },
+        {
+          "mes": "2025-12",
+          "facturacion_neta_ars": 67693452.52
+        },
+        {
+          "mes": "2026-01",
+          "facturacion_neta_ars": 117373040.04
+        },
+        {
+          "mes": "2026-02",
+          "facturacion_neta_ars": 162215365.86
+        }
+      ]
+    },
+    {
+      "canal": "Canal-004",
+      "facturacion_neta_ars": 48850876.52,
+      "share_pct_del_mes": 5.67,
+      "cantidad_documentos": 2,
+      "cantidad_fc": 2,
+      "cantidad_nc": 0,
+      "ratio_nc_fc": 0.0,
+      "motivos_nc": {},
+      "mix_cuotas_pct": {
+        "sin_dato": 100.0
+      },
+      "historia_6m_previa": [
+        {
+          "mes": "2025-10",
+          "facturacion_neta_ars": 100845621.32
+        },
+        {
+          "mes": "2025-11",
+          "facturacion_neta_ars": 168801543.63
+        },
+        {
+          "mes": "2025-12",
+          "facturacion_neta_ars": 370050180.71
+        }
+      ]
+    },
+    {
+      "canal": "Canal-027",
+      "facturacion_neta_ars": 24112676.26,
+      "share_pct_del_mes": 2.8,
+      "cantidad_documentos": 20,
+      "cantidad_fc": 20,
+      "cantidad_nc": 0,
+      "ratio_nc_fc": 0.0,
+      "motivos_nc": {},
+      "mix_cuotas_pct": {
+        "corto_1_9": 100.0
+      },
+      "historia_6m_previa": [
+        {
+          "mes": "2025-09",
+          "facturacion_neta_ars": 12738264.03
+        },
+        {
+          "mes": "2025-10",
+          "facturacion_neta_ars": 7664608.45
+        },
+        {
+          "mes": "2025-11",
+          "facturacion_neta_ars": 29485924.58
+        },
+        {
+          "mes": "2025-12",
+          "facturacion_neta_ars": 10582025.77
+        },
+        {
+          "mes": "2026-01",
+          "facturacion_neta_ars": 18821629.93
+        },
+        {
+          "mes": "2026-02",
+          "facturacion_neta_ars": 37387802.62
+        }
+      ]
+    },
+    {
+      "canal": "Canal-020",
+      "facturacion_neta_ars": 21519846.97,
+      "share_pct_del_mes": 2.5,
+      "cantidad_documentos": 16,
+      "cantidad_fc": 16,
+      "cantidad_nc": 0,
+      "ratio_nc_fc": 0.0,
+      "motivos_nc": {},
+      "mix_cuotas_pct": {
+        "corto_1_9": 100.0
+      },
+      "historia_6m_previa": [
+        {
+          "mes": "2025-09",
+          "facturacion_neta_ars": 10918458.23
+        },
+        {
+          "mes": "2025-10",
+          "facturacion_neta_ars": 0.0
+        },
+        {
+          "mes": "2025-11",
+          "facturacion_neta_ars": 72511858.55
+        },
+        {
+          "mes": "2025-12",
+          "facturacion_neta_ars": 10052720.8
+        },
+        {
+          "mes": "2026-01",
+          "facturacion_neta_ars": 1826.79
+        },
+        {
+          "mes": "2026-02",
+          "facturacion_neta_ars": 42559354.56
+        }
+      ]
+    },
+    {
+      "canal": "Canal-033",
+      "facturacion_neta_ars": 17924105.47,
+      "share_pct_del_mes": 2.08,
+      "cantidad_documentos": 14,
+      "cantidad_fc": 12,
+      "cantidad_nc": 2,
+      "ratio_nc_fc": 0.1667,
+      "motivos_nc": {
+        "devolucion_logistica": 2
+      },
+      "mix_cuotas_pct": {
+        "corto_1_9": 100.0
+      },
+      "historia_6m_previa": [
+        {
+          "mes": "2025-09",
+          "facturacion_neta_ars": 29173112.54
+        },
+        {
+          "mes": "2025-10",
+          "facturacion_neta_ars": 8327854.72
+        },
+        {
+          "mes": "2025-11",
+          "facturacion_neta_ars": 18762017.7
+        },
+        {
+          "mes": "2025-12",
+          "facturacion_neta_ars": 5176082.15
+        },
+        {
+          "mes": "2026-01",
+          "facturacion_neta_ars": 19679362.4
+        },
+        {
+          "mes": "2026-02",
+          "facturacion_neta_ars": 31812406.42
+        }
+      ]
+    },
+    {
+      "canal": "Canal-034",
+      "facturacion_neta_ars": 17369865.39,
+      "share_pct_del_mes": 2.02,
+      "cantidad_documentos": 37,
+      "cantidad_fc": 34,
+      "cantidad_nc": 3,
+      "ratio_nc_fc": 0.0882,
+      "motivos_nc": {
+        "administrativa": 3
+      },
+      "mix_cuotas_pct": {
+        "sin_dato": 100.0
+      },
+      "historia_6m_previa": [
+        {
+          "mes": "2025-09",
+          "facturacion_neta_ars": 7301465.74
+        },
+        {
+          "mes": "2025-10",
+          "facturacion_neta_ars": 3732639.49
+        },
+        {
+          "mes": "2025-11",
+          "facturacion_neta_ars": 6373772.03
+        },
+        {
+          "mes": "2025-12",
+          "facturacion_neta_ars": 27214270.5
+        },
+        {
+          "mes": "2026-01",
+          "facturacion_neta_ars": 34428328.43
+        },
+        {
+          "mes": "2026-02",
+          "facturacion_neta_ars": 15373864.57
+        }
+      ]
+    },
+    {
+      "canal": "Canal-012",
+      "facturacion_neta_ars": 10829028.05,
+      "share_pct_del_mes": 1.26,
+      "cantidad_documentos": 19,
+      "cantidad_fc": 19,
+      "cantidad_nc": 0,
+      "ratio_nc_fc": 0.0,
+      "motivos_nc": {},
+      "mix_cuotas_pct": {
+        "corto_1_9": 3.9,
+        "medio_10_18": 17.5,
+        "largo_20_mas": 78.6
+      },
+      "historia_6m_previa": [
+        {
+          "mes": "2025-09",
+          "facturacion_neta_ars": 19351994.59
+        },
+        {
+          "mes": "2025-10",
+          "facturacion_neta_ars": 4902344.94
+        },
+        {
+          "mes": "2025-11",
+          "facturacion_neta_ars": 85851277.04
+        },
+        {
+          "mes": "2025-12",
+          "facturacion_neta_ars": 12693243.24
+        },
+        {
+          "mes": "2026-01",
+          "facturacion_neta_ars": 16778065.12
+        },
+        {
+          "mes": "2026-02",
+          "facturacion_neta_ars": 6466184.89
+        }
+      ]
+    },
+    {
+      "canal": "Canal-054",
+      "facturacion_neta_ars": 10078597.66,
+      "share_pct_del_mes": 1.17,
+      "cantidad_documentos": 2,
+      "cantidad_fc": 2,
+      "cantidad_nc": 0,
+      "ratio_nc_fc": 0.0,
+      "motivos_nc": {},
+      "mix_cuotas_pct": {
+        "sin_dato": 100.0
+      },
+      "historia_6m_previa": [
+        {
+          "mes": "2025-09",
+          "facturacion_neta_ars": 7566438.27
+        },
+        {
+          "mes": "2025-12",
+          "facturacion_neta_ars": 4865273.68
+        },
+        {
+          "mes": "2026-02",
+          "facturacion_neta_ars": 5121830.21
+        }
+      ]
+    },
+    {
+      "canal": "Canal-053",
+      "facturacion_neta_ars": 7370127.77,
+      "share_pct_del_mes": 0.86,
+      "cantidad_documentos": 5,
+      "cantidad_fc": 5,
+      "cantidad_nc": 0,
+      "ratio_nc_fc": 0.0,
+      "motivos_nc": {},
+      "mix_cuotas_pct": {
+        "medio_10_18": 75.7,
+        "corto_1_9": 24.3
+      },
+      "historia_6m_previa": []
+    },
+    {
+      "canal": "Canal-051",
+      "facturacion_neta_ars": 5119901.12,
+      "share_pct_del_mes": 0.59,
+      "cantidad_documentos": 2,
+      "cantidad_fc": 2,
+      "cantidad_nc": 0,
+      "ratio_nc_fc": 0.0,
+      "motivos_nc": {},
+      "mix_cuotas_pct": {
+        "corto_1_9": 100.0
+      },
+      "historia_6m_previa": [
+        {
+          "mes": "2025-09",
+          "facturacion_neta_ars": 1886437.2
+        },
+        {
+          "mes": "2025-11",
+          "facturacion_neta_ars": 1828535.55
+        },
+        {
+          "mes": "2025-12",
+          "facturacion_neta_ars": 3108511.83
+        },
+        {
+          "mes": "2026-01",
+          "facturacion_neta_ars": 14831461.21
+        },
+        {
+          "mes": "2026-02",
+          "facturacion_neta_ars": 4754193.61
+        }
+      ]
+    },
+    {
+      "canal": "Canal-048",
+      "facturacion_neta_ars": 3624844.18,
+      "share_pct_del_mes": 0.42,
+      "cantidad_documentos": 1,
+      "cantidad_fc": 1,
+      "cantidad_nc": 0,
+      "ratio_nc_fc": 0.0,
+      "motivos_nc": {},
+      "mix_cuotas_pct": {
+        "sin_dato": 100.0
+      },
+      "historia_6m_previa": [
+        {
+          "mes": "2025-07",
+          "facturacion_neta_ars": 3328938.25
+        },
+        {
+          "mes": "2025-08",
+          "facturacion_neta_ars": 2923915.13
+        },
+        {
+          "mes": "2025-11",
+          "facturacion_neta_ars": 2459716.36
+        },
+        {
+          "mes": "2025-12",
+          "facturacion_neta_ars": 2459716.36
+        },
+        {
+          "mes": "2026-01",
+          "facturacion_neta_ars": -2459716.36
+        }
+      ]
+    },
+    {
+      "canal": "Canal-035",
+      "facturacion_neta_ars": 2727865.84,
+      "share_pct_del_mes": 0.32,
+      "cantidad_documentos": 6,
+      "cantidad_fc": 5,
+      "cantidad_nc": 1,
+      "ratio_nc_fc": 0.2,
+      "motivos_nc": {
+        "administrativa": 1
+      },
+      "mix_cuotas_pct": {
+        "medio_10_18": 100.0
+      },
+      "historia_6m_previa": [
+        {
+          "mes": "2025-09",
+          "facturacion_neta_ars": 2721293.76
+        },
+        {
+          "mes": "2025-10",
+          "facturacion_neta_ars": -381935.9
+        },
+        {
+          "mes": "2025-11",
+          "facturacion_neta_ars": 5763470.39
+        },
+        {
+          "mes": "2025-12",
+          "facturacion_neta_ars": 908089.15
+        },
+        {
+          "mes": "2026-01",
+          "facturacion_neta_ars": 4893923.68
+        },
+        {
+          "mes": "2026-02",
+          "facturacion_neta_ars": 3436928.05
+        }
+      ]
+    },
+    {
+      "canal": "Canal-045",
+      "facturacion_neta_ars": 2020577.73,
+      "share_pct_del_mes": 0.23,
+      "cantidad_documentos": 1,
+      "cantidad_fc": 1,
+      "cantidad_nc": 0,
+      "ratio_nc_fc": 0.0,
+      "motivos_nc": {},
+      "mix_cuotas_pct": {
+        "sin_dato": 100.0
+      },
+      "historia_6m_previa": [
+        {
+          "mes": "2025-11",
+          "facturacion_neta_ars": 2228210.69
+        }
+      ]
+    },
+    {
+      "canal": "Canal-056",
+      "facturacion_neta_ars": 1974368.59,
+      "share_pct_del_mes": 0.23,
+      "cantidad_documentos": 6,
+      "cantidad_fc": 4,
+      "cantidad_nc": 2,
+      "ratio_nc_fc": 0.5,
+      "motivos_nc": {
+        "devolucion_logistica": 2
+      },
+      "mix_cuotas_pct": {
+        "sin_dato": 100.0
+      },
+      "historia_6m_previa": []
+    },
+    {
+      "canal": "Canal-055",
+      "facturacion_neta_ars": 1194222.25,
+      "share_pct_del_mes": 0.14,
+      "cantidad_documentos": 1,
+      "cantidad_fc": 1,
+      "cantidad_nc": 0,
+      "ratio_nc_fc": 0.0,
+      "motivos_nc": {},
+      "mix_cuotas_pct": {
+        "sin_dato": 100.0
+      },
+      "historia_6m_previa": []
+    },
+    {
+      "canal": "Canal-057",
+      "facturacion_neta_ars": -334119.41,
+      "share_pct_del_mes": -0.04,
+      "cantidad_documentos": 1,
+      "cantidad_fc": 0,
+      "cantidad_nc": 1,
+      "ratio_nc_fc": null,
+      "motivos_nc": {
+        "acuerdo_comercial": 1
+      },
+      "mix_cuotas_pct": {},
+      "historia_6m_previa": [
+        {
+          "mes": "2025-12",
+          "facturacion_neta_ars": 2227464.0
+        }
+      ]
+    },
+    {
+      "canal": "Canal-058",
+      "facturacion_neta_ars": -1332088.53,
+      "share_pct_del_mes": -0.15,
+      "cantidad_documentos": 1,
+      "cantidad_fc": 0,
+      "cantidad_nc": 1,
+      "ratio_nc_fc": null,
+      "motivos_nc": {
+        "acuerdo_comercial": 1
+      },
+      "mix_cuotas_pct": {},
+      "historia_6m_previa": [
+        {
+          "mes": "2025-12",
+          "facturacion_neta_ars": 11462655.29
+        }
+      ]
+    },
+    {
+      "canal": "Canal-005",
+      "facturacion_neta_ars": -2287354.46,
+      "share_pct_del_mes": -0.27,
+      "cantidad_documentos": 1,
+      "cantidad_fc": 0,
+      "cantidad_nc": 1,
+      "ratio_nc_fc": null,
+      "motivos_nc": {
+        "acuerdo_comercial": 1
+      },
+      "mix_cuotas_pct": {},
+      "historia_6m_previa": [
+        {
+          "mes": "2025-09",
+          "facturacion_neta_ars": 2667049568.41
+        },
+        {
+          "mes": "2025-10",
+          "facturacion_neta_ars": 795330566.76
+        },
+        {
+          "mes": "2025-11",
+          "facturacion_neta_ars": 457470890.8
+        },
+        {
+          "mes": "2025-12",
+          "facturacion_neta_ars": 228735445.4
+        },
+        {
+          "mes": "2026-01",
+          "facturacion_neta_ars": -34656183.37
+        }
+      ]
+    },
+    {
+      "canal": "Canal-059",
+      "facturacion_neta_ars": -2733883.8,
+      "share_pct_del_mes": -0.32,
+      "cantidad_documentos": 1,
+      "cantidad_fc": 0,
+      "cantidad_nc": 1,
+      "ratio_nc_fc": null,
+      "motivos_nc": {
+        "rechazo_cliente": 1
+      },
+      "mix_cuotas_pct": {},
+      "historia_6m_previa": [
+        {
+          "mes": "2026-01",
+          "facturacion_neta_ars": 2877683.23
+        },
+        {
+          "mes": "2026-02",
+          "facturacion_neta_ars": 2733883.8
+        }
+      ]
+    },
+    {
+      "canal": "Canal-002",
+      "facturacion_neta_ars": -10517766.76,
+      "share_pct_del_mes": -1.22,
+      "cantidad_documentos": 4,
+      "cantidad_fc": 0,
+      "cantidad_nc": 4,
+      "ratio_nc_fc": null,
+      "motivos_nc": {
+        "acuerdo_comercial": 4
+      },
+      "mix_cuotas_pct": {},
+      "historia_6m_previa": [
+        {
+          "mes": "2025-11",
+          "facturacion_neta_ars": 397000219.72
+        },
+        {
+          "mes": "2025-12",
+          "facturacion_neta_ars": 57811729.33
+        },
+        {
+          "mes": "2026-01",
+          "facturacion_neta_ars": 143720391.78
+        },
+        {
+          "mes": "2026-02",
+          "facturacion_neta_ars": 80847240.07
+        }
+      ]
+    }
+  ]
+}
