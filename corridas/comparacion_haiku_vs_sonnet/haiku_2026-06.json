@@ -1,0 +1,28 @@
+{
+  "mes_objetivo": "2026-06",
+  "modelo": "claude-haiku-4-5-20251001",
+  "fecha": "2026-09-07T23:49:10.274Z",
+  "duracion_ms": 36067,
+  "usage": {
+    "input_tokens": 11228,
+    "output_tokens": 1963,
+    "service_tier": "standard"
+  },
+  "salida_parseada": {
+    "periodo_analizado": "2026-06",
+    "resumen_ejecutivo": "El mes presenta una facturación neta total de ARS 1.272.840.099, fuertemente concentrada en Canal-060 (41,4% del total) con comportamiento atípico por volumen mínimo de documentos (7 FC) y sin dato de mix de cuotas. Tres canales operan con facturación neta negativa por notas de crédito sin facturas del período. Los canales con mayor volumen transaccional muestran ratios de NC/FC que ameritan monitoreo.",
+    "canales_prioritarios": [
+      {"canal": "Canal-064", "categoria": "riesgo", "metrica_clave": "ratio_nc_fc = 0.375 (3 NC sobre 8 FC)", "evidencia": "Las 3 notas de crédito son íntegramente por rechazo_cliente; en mayo el canal facturó ARS 133,8M y en junio apenas ARS 9,0M, una caída del 93%.", "confianza": "baja", "requiere_revision_humana": true},
+      {"canal": "Canal-053", "categoria": "riesgo", "metrica_clave": "ratio_nc_fc = 0.30 (3 NC sobre 10 FC); 28,8% de mix sin dato de cuotas", "evidencia": "El canal cayó de ARS 84,9M en mayo a ARS 8,6M en junio (−90%) y el 100% de sus NC responden a motivo 'administrativa'.", "confianza": "baja", "requiere_revision_humana": true},
+      {"canal": "Canal-002", "categoria": "riesgo", "metrica_clave": "facturacion_neta_ars = −7.057.771; ratio_nc_fc = null (0 FC en el período)", "evidencia": "Lleva varios meses consecutivos con facturación neta negativa según historia_6m_previa; el único documento de junio es una NC por acuerdo_comercial sin factura compensatoria.", "confianza": "alta", "requiere_revision_humana": true},
+      {"canal": "Canal-060", "categoria": "riesgo", "metrica_clave": "share_pct_del_mes = 41,38% con solo 7 documentos (todos FC); mix_cuotas_pct 100% sin_dato", "evidencia": "Concentra ARS 526,7M en 7 facturas —ticket promedio de ~ARS 75M— con facturación negativa en dos meses de su historia, lo que sugiere documentos de ajuste o lotes mayoristas de naturaleza distinta al negocio retail habitual.", "confianza": "media", "requiere_revision_humana": true},
+      {"canal": "Canal-001", "categoria": "oportunidad", "metrica_clave": "mix_cuotas_pct: corto_1_9 = 66,4%; medio_10_18 = 32,8%; largo_20_mas = 0%", "evidencia": "Es el segundo canal por volumen (ARS 277,7M, 21,8% de share) con 310 facturas y ausencia total de financiación larga, lo que representa margen de upselling hacia planes de mayor duración.", "confianza": "alta", "requiere_revision_humana": false}
+    ],
+    "forecast_canal": [
+      {"canal": "Canal-001", "proyeccion_proximo_mes_ars": 890044662, "metodo": "promedio simple de los últimos 3 meses de historia_6m_previa (mar-26, abr-26, may-26)", "confianza": "baja"},
+      {"canal": "Canal-014", "proyeccion_proximo_mes_ars": 178840289, "metodo": "promedio simple de los últimos 3 meses de historia_6m_previa (mar-26, abr-26, may-26)", "confianza": "baja"},
+      {"canal": "Canal-034", "proyeccion_proximo_mes_ars": 16790348, "metodo": "promedio simple de los últimos 3 meses de historia_6m_previa (mar-26, abr-26, may-26)", "confianza": "media"}
+    ],
+    "datos_insuficientes": ["Canal-060, Canal-061, Canal-004: mix_cuotas_pct 100% sin_dato", "Canal-063, Canal-065, Canal-066, Canal-068, Canal-070, Canal-069: sin historia_6m_previa", "Canal-071, Canal-005: ratio_nc_fc nulo por 0 FC en el período", "Canal-064: historia con un solo mes disponible", "Canal-053, Canal-027: forecast omitido por alta volatilidad"]
+  }
+}

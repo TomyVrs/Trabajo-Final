@@ -1,0 +1,27 @@
+{
+  "total_corridas": 3,
+  "corridas": [
+    {
+      "numero": 1,
+      "mes_objetivo": "2025-11",
+      "carpeta": "corrida_1_2025-11",
+      "archivos": ["entrada.md", "salida.json", "fecha.txt", "corrida.json"]
+    },
+    {
+      "numero": 2,
+      "mes_objetivo": "2026-03",
+      "carpeta": "corrida_2_2026-03",
+      "archivos": ["entrada.md", "salida.json", "fecha.txt", "corrida.json"]
+    },
+    {
+      "numero": 3,
+      "mes_objetivo": "2026-06",
+      "carpeta": "corrida_3_2026-06",
+      "archivos": ["entrada.md", "salida.json", "fecha.txt", "corrida.json"]
+    }
+  ],
+  "evidencia_adicional": {
+    "falla_preservada": "corridas/falla_preservada/ — salida original y truncada de una corrida fallida real (ver DECISIONES.md, iteración 2)",
+    "comparacion_modelos": "corridas/comparacion_haiku_vs_sonnet/ — 3 corridas adicionales reales con Claude Haiku 4.5 sobre los mismos meses y datos, para justificar la elección de modelo con evidencia (ver DECISIONES.md, iteración 8)"
+  }
+}
