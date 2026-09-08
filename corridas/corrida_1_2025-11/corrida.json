@@ -1,0 +1,90 @@
+{
+  "corrida": 1,
+  "mes_objetivo": "2025-11",
+  "fecha": "2026-09-04T00:52:40.618Z",
+  "modelo": "claude-sonnet-4-6",
+  "duracion_ms": 39780,
+  "reproducibilidad": {
+    "system_prompt": "../../prompts/system_prompt.md",
+    "user_prompt_template": "../../prompts/user_prompt.md",
+    "datos_de_entrada_de_la_herramienta": "../../herramienta/salidas/metricas_2025-11.json — generado con: python3 agregar_metricas_canal.py --mes 2025-11 --min-facturacion 500000",
+    "nota_confidencialidad": "Los nombres de canal fueron anonimizados (Canal-XXX) y los montos monetarios escalados por un factor aleatorio por canal, consistente entre meses. Ver DECISIONES.md, iteración 7. Ratios, porcentajes y conteos de documentos NO fueron alterados."
+  },
+  "usage": {
+    "input_tokens": 12473,
+    "output_tokens": 2726,
+    "service_tier": "standard"
+  },
+  "salida_parseada": {
+    "periodo_analizado": "2025-11",
+    "resumen_ejecutivo": "El mes concentra el 24% de la facturación en Canal-001, con una base amplia de 52 canales activos y facturación total de ~$6.47B ARS. Los principales focos de riesgo son Canal-003 y Canal-004 por ratios de NC elevados, y Canal-005 por una caída abrupta respecto a su historia reciente. Canal-006 y Canal-014 destacan como oportunidades por crecimiento sostenido y mix de cuotas con margen de upselling.",
+    "canales_prioritarios": [
+      {
+        "canal": "Canal-004",
+        "categoria": "riesgo",
+        "metrica_clave": "ratio_nc_fc = 0.2857 (2 NC sobre 7 FC)",
+        "evidencia": "Ambas NC son por devolución logística, sobre un volumen muy bajo de documentos (9 en total) — la tasa es la más alta del mes entre canales con historia previa.",
+        "confianza": "baja",
+        "requiere_revision_humana": true
+      },
+      {
+        "canal": "Canal-003",
+        "categoria": "riesgo",
+        "metrica_clave": "ratio_nc_fc = 0.1818 (2 NC sobre 11 FC)",
+        "evidencia": "Segundo ratio más alto del mes; mix de cuotas 100% sin_dato y volumen de documentos muy bajo (13) limitan la capacidad de diagnóstico adicional.",
+        "confianza": "baja",
+        "requiere_revision_humana": true
+      },
+      {
+        "canal": "Canal-005",
+        "categoria": "riesgo",
+        "metrica_clave": "facturacion_neta_ars = $457.5M vs. $2,667M en 2025-09 y $795M en 2025-10",
+        "evidencia": "La facturación cayó ~83% respecto a septiembre y ~43% respecto a octubre, sobre apenas 2 documentos en noviembre — patrón de desaceleración pronunciada.",
+        "confianza": "media",
+        "requiere_revision_humana": true
+      },
+      {
+        "canal": "Canal-006",
+        "categoria": "oportunidad",
+        "metrica_clave": "share_pct_del_mes = 4.35% con 230 FC; mix medio_10_18 = 97.5%",
+        "evidencia": "Creció de ~$1.6M en jul-25 a $281.5M en nov-25, con concentración casi total en cuotas medias y sin exposición a cuotas largas — hay espacio para upselling hacia tramos 20+.",
+        "confianza": "media",
+        "requiere_revision_humana": false
+      },
+      {
+        "canal": "Canal-001",
+        "categoria": "oportunidad",
+        "metrica_clave": "share_pct_del_mes = 24.43%; mix corto_1_9 = 68.3%",
+        "evidencia": "Es el canal dominante del mes con 1,557 FC y crecimiento desde $101M en jul-25 hasta $1,580M en nov-25; la alta concentración en cuotas cortas sugiere potencial de migración a tramos medios/largos.",
+        "confianza": "alta",
+        "requiere_revision_humana": false
+      }
+    ],
+    "forecast_canal": [
+      {
+        "canal": "Canal-001",
+        "proyeccion_proximo_mes_ars": 161314536,
+        "metodo": "promedio simple de los últimos 3 meses de historia_6m_previa (2025-08, 2025-09, 2025-10)",
+        "confianza": "baja"
+      },
+      {
+        "canal": "Canal-003",
+        "proyeccion_proximo_mes_ars": 254977592,
+        "metodo": "promedio simple de los últimos 3 meses de historia_6m_previa (2025-07, 2025-09, 2025-10)",
+        "confianza": "baja"
+      },
+      {
+        "canal": "Canal-005",
+        "proyeccion_proximo_mes_ars": 630494068,
+        "metodo": "promedio simple de los últimos 2 meses disponibles en historia_6m_previa (solo 2 puntos)",
+        "confianza": "baja"
+      }
+    ],
+    "datos_insuficientes": [
+      "26 canales sin historia_6m_previa (entre otros Canal-002, Canal-008, Canal-010, Canal-013, Canal-015 a Canal-052): forecast no posible",
+      "Canal-003, Canal-004, Canal-005: mix_cuotas_pct = 100% sin_dato — estructura de financiamiento no analizable",
+      "Canal-007 y Canal-035: historia_6m_previa incluye un valor negativo en un mes puntual — posible ajuste contable no explicado en los datos",
+      "Múltiples canales con mix_cuotas_pct 100% sin_dato en el resto del listado — imposible evaluar upselling de cuotas en esos canales"
+    ]
+  }
+}

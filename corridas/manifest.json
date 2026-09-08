@@ -1,0 +1,23 @@
+{
+  "total_corridas": 3,
+  "corridas": [
+    {
+      "numero": 1,
+      "mes_objetivo": "2025-11",
+      "carpeta": "corrida_1_2025-11",
+      "archivos": ["entrada.md", "salida.json", "fecha.txt", "corrida.json"]
+    },
+    {
+      "numero": 2,
+      "mes_objetivo": "2026-03",
+      "carpeta": "corrida_2_2026-03",
+      "archivos": ["entrada.md", "salida.json", "fecha.txt", "corrida.json"]
+    },
+    {
+      "numero": 3,
+      "mes_objetivo": "2026-06",
+      "carpeta": "corrida_3_2026-06",
+      "archivos": ["entrada.md", "salida.json", "fecha.txt", "corrida.json"]
+    }
+  ]
+}
